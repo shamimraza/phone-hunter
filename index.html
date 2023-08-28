@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunting phone api</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <h2 class="text-4xl text-center font-bold">Hunting Phone</h2>
+  </header>
+  <main class="w-11/12 mx-auto">
+    <section class="mt-4">
+      <div class="flex justify-between">
+        <div>
+          <input id="input" type="text" placeholder="Search..." class="input input-bordered bg-gray-200"
+            id="input-field" />
+          <button onclick="clickButton()" class="btn btn-accent text-white">Search</button>
+        </div>
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <input type="text" placeholder="Search..." class="input input-bordered bg-black text-blue-100"
+            id="input-field" />
+          <button onclick="clickSearch()" class="btn btn-secondary text-white">Search</button>
+        </div>
+      </div>
+      <div id="showAll-container" class="flex items-center hidden justify-center mt-4 ">
+        <button class="btn btn-primary ">Show All</button>
+      </div>
+    </section>
+    <!-- all result -->
+    <section>
+      <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+      </div>
+    </section>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
